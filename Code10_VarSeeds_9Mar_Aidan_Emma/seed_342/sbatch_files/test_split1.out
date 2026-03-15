@@ -1,0 +1,407 @@
+Job ID: 2380062
+Start time: Tue Mar 10 18:04:46 CDT 2026
+Requirement already satisfied: torch>=1.9.0 in /projects/e32998/env/lib/python3.12/site-packages (from -r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (2.9.0)
+Requirement already satisfied: torchvision>=0.10.0 in /projects/e32998/env/lib/python3.12/site-packages (from -r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 3)) (0.24.0)
+Requirement already satisfied: numpy>=1.21.0 in /projects/e32998/env/lib/python3.12/site-packages (from -r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 4)) (2.3.4)
+Requirement already satisfied: pandas>=1.3.0 in /projects/e32998/env/lib/python3.12/site-packages (from -r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 5)) (2.3.3)
+Requirement already satisfied: scikit-learn>=1.0.0 in /projects/e32998/env/lib/python3.12/site-packages (from -r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 6)) (1.7.2)
+Requirement already satisfied: Pillow>=8.3.0 in /projects/e32998/env/lib/python3.12/site-packages (from -r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 7)) (12.0.0)
+Requirement already satisfied: tqdm>=4.62.0 in /projects/e32998/env/lib/python3.12/site-packages (from -r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 8)) (4.67.1)
+Requirement already satisfied: matplotlib>=3.5.0 in /projects/e32998/env/lib/python3.12/site-packages (from -r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 11)) (3.10.7)
+Requirement already satisfied: seaborn>=0.11.0 in /projects/e32998/env/lib/python3.12/site-packages (from -r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 12)) (0.13.2)
+Requirement already satisfied: optuna>=3.0.0 in /projects/e32998/env/lib/python3.12/site-packages (from -r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 15)) (4.7.0)
+Requirement already satisfied: psutil>=5.8.0 in /projects/e32998/env/lib/python3.12/site-packages (from -r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 18)) (7.1.2)
+Requirement already satisfied: imbalanced-learn>=0.8.0 in /projects/e32998/env/lib/python3.12/site-packages (from -r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 21)) (0.14.0)
+Requirement already satisfied: filelock in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (3.20.0)
+Requirement already satisfied: typing-extensions>=4.10.0 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (4.15.0)
+Requirement already satisfied: setuptools in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (80.9.0)
+Requirement already satisfied: sympy>=1.13.3 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (1.14.0)
+Requirement already satisfied: networkx>=2.5.1 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (3.5)
+Requirement already satisfied: jinja2 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (3.1.6)
+Requirement already satisfied: fsspec>=0.8.5 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (2025.9.0)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.8.93 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (12.8.93)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.8.90 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (12.8.90)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.8.90 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (12.8.90)
+Requirement already satisfied: nvidia-cudnn-cu12==9.10.2.21 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (9.10.2.21)
+Requirement already satisfied: nvidia-cublas-cu12==12.8.4.1 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (12.8.4.1)
+Requirement already satisfied: nvidia-cufft-cu12==11.3.3.83 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (11.3.3.83)
+Requirement already satisfied: nvidia-curand-cu12==10.3.9.90 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (10.3.9.90)
+Requirement already satisfied: nvidia-cusolver-cu12==11.7.3.90 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (11.7.3.90)
+Requirement already satisfied: nvidia-cusparse-cu12==12.5.8.93 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (12.5.8.93)
+Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (0.7.1)
+Requirement already satisfied: nvidia-nccl-cu12==2.27.5 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (2.27.5)
+Requirement already satisfied: nvidia-nvshmem-cu12==3.3.20 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (3.3.20)
+Requirement already satisfied: nvidia-nvtx-cu12==12.8.90 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (12.8.90)
+Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.93 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (12.8.93)
+Requirement already satisfied: nvidia-cufile-cu12==1.13.1.3 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (1.13.1.3)
+Requirement already satisfied: triton==3.5.0 in /projects/e32998/env/lib/python3.12/site-packages (from torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (3.5.0)
+Requirement already satisfied: python-dateutil>=2.8.2 in /projects/e32998/env/lib/python3.12/site-packages (from pandas>=1.3.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 5)) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /projects/e32998/env/lib/python3.12/site-packages (from pandas>=1.3.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 5)) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in /projects/e32998/env/lib/python3.12/site-packages (from pandas>=1.3.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 5)) (2025.2)
+Requirement already satisfied: scipy>=1.8.0 in /projects/e32998/env/lib/python3.12/site-packages (from scikit-learn>=1.0.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 6)) (1.16.3)
+Requirement already satisfied: joblib>=1.2.0 in /projects/e32998/env/lib/python3.12/site-packages (from scikit-learn>=1.0.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 6)) (1.5.2)
+Requirement already satisfied: threadpoolctl>=3.1.0 in /projects/e32998/env/lib/python3.12/site-packages (from scikit-learn>=1.0.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 6)) (3.6.0)
+Requirement already satisfied: contourpy>=1.0.1 in /projects/e32998/env/lib/python3.12/site-packages (from matplotlib>=3.5.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 11)) (1.3.3)
+Requirement already satisfied: cycler>=0.10 in /projects/e32998/env/lib/python3.12/site-packages (from matplotlib>=3.5.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 11)) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /projects/e32998/env/lib/python3.12/site-packages (from matplotlib>=3.5.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 11)) (4.60.1)
+Requirement already satisfied: kiwisolver>=1.3.1 in /projects/e32998/env/lib/python3.12/site-packages (from matplotlib>=3.5.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 11)) (1.4.9)
+Requirement already satisfied: packaging>=20.0 in /projects/e32998/env/lib/python3.12/site-packages (from matplotlib>=3.5.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 11)) (25.0)
+Requirement already satisfied: pyparsing>=3 in /projects/e32998/env/lib/python3.12/site-packages (from matplotlib>=3.5.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 11)) (3.2.5)
+Requirement already satisfied: alembic>=1.5.0 in /projects/e32998/env/lib/python3.12/site-packages (from optuna>=3.0.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 15)) (1.18.3)
+Requirement already satisfied: colorlog in /projects/e32998/env/lib/python3.12/site-packages (from optuna>=3.0.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 15)) (6.10.1)
+Requirement already satisfied: sqlalchemy>=1.4.2 in /projects/e32998/env/lib/python3.12/site-packages (from optuna>=3.0.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 15)) (2.0.46)
+Requirement already satisfied: PyYAML in /projects/e32998/env/lib/python3.12/site-packages (from optuna>=3.0.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 15)) (6.0.3)
+Requirement already satisfied: Mako in /projects/e32998/env/lib/python3.12/site-packages (from alembic>=1.5.0->optuna>=3.0.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 15)) (1.3.10)
+Requirement already satisfied: six>=1.5 in /projects/e32998/env/lib/python3.12/site-packages (from python-dateutil>=2.8.2->pandas>=1.3.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 5)) (1.17.0)
+Requirement already satisfied: greenlet>=1 in /projects/e32998/env/lib/python3.12/site-packages (from sqlalchemy>=1.4.2->optuna>=3.0.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 15)) (3.3.1)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /projects/e32998/env/lib/python3.12/site-packages (from sympy>=1.13.3->torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /projects/e32998/env/lib/python3.12/site-packages (from jinja2->torch>=1.9.0->-r /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/requirements.txt (line 2)) (3.0.3)
+Requirement already satisfied: certifi in /projects/e32998/env/lib/python3.12/site-packages (2026.2.25)
+Random seed set to 342
+Using CPU
+Created run directory: /projects/e32998/MIL_training/final_runs/run_20260310_180533
+================================================================================
+HIERARCHICAL ATTENTION MIL TRAINING
+================================================================================
+Arguments: {'labels_csv': '/projects/e32998/STAT390_Krish/Code/Code4_reduce_runtime/extra_benign_case_grade_match.csv', 'patches_dir': '/projects/e32998/patches_benign_split', 'epochs': 30, 'lr': 0.000208, 'batch_size': 1, 'num_workers': 2, 'embed_dim': 512, 'per_slice_cap': 500, 'max_slices_per_stain': 5, 'seed': 342, 'resume': None, 'eval_only': False, 'analyze_attention': True, 'attention_top_n': 8, 'load_splits': '/home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/no_train_val_leakage_splits/data_splits_new_01.npz', 'checkpoint_dir': '/projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints'}
+Training config (may be overridden by arguments): {'epochs': 30, 'batch_size': 1, 'learning_rate': 0.000208, 'weight_decay': 0.000305, 'num_workers': 2, 'pin_memory': True, 'random_state': 342, 'class_weights': [2.5285, 1.0], 'dropout': 0.2599, 'use_scheduler': True, 'scheduler_type': 'reduce_on_plateau', 'scheduler_patience': 4, 'scheduler_factor': 0.2139, 'scheduler_min_lr': 1e-06, 'early_stopping': True, 'early_stopping_patience': 8, 'early_stopping_min_delta': 0.001, 'early_stopping_min_epochs': 10, 'use_patch_entropy_regularization': True, 'patch_entropy_lambda': 0.001, 'patch_entropy_mode': 'max', 'patch_entropy_eps': 1e-08, 'normalize_patch_entropy': True}
+============================================================
+PREPARING DATA
+============================================================
+Loaded 118 labels
+Found 83630 patch files
+All 3808 non-standard file names were handled.
+Grouped into 383 slices
+Mapped 371 slices to classes
+Class distribution: {1: 238, 0: 133}
+
+----------------------------------------
+SPLITTING DATA
+----------------------------------------
+Loading existing splits from: /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/no_train_val_leakage_splits/data_splits_new_01.npz
+Data splits loaded from: /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/no_train_val_leakage_splits/data_splits_new_01.npz
+Loaded splits - Train: 247, Val: 53, Test: 71
+Cases per split: 57 18 18
+Paths per split: 51810 14101 14130
+No leakage between train & val (cases).
+No leakage between train & test (cases).
+No leakage between val & test (cases).
+No leakage between train & val (paths).
+No leakage between train & test (paths).
+No leakage between val & test (paths).
+
+Data Summary:
+==================================================
+
+Label distribution per split:
+label   0   1
+split        
+test    7  11
+train  21  36
+val     7  11
+
+Mean patches per stain per split:
+       h&e_patches  melan_patches  sox10_patches
+split                                           
+test         404.4          203.2          177.3
+train        440.7          258.6          209.6
+val          405.0          201.1          177.3
+
+Median patches per stain per split:
+       h&e_patches  melan_patches  sox10_patches
+split                                           
+test         306.0          174.0          148.0
+train        328.0          194.0          155.0
+val          326.5          167.5          164.0
+
+Missing stain proportion:
+       h&e_missing  melan_missing  sox10_missing
+split                                           
+test           0.0          0.000          0.000
+train          0.0          0.035          0.035
+val            0.0          0.000          0.000
+
+Total cases: 93
+Total patches: 80,041
+==================================================
+
+Patch count by class for Train:
+  Benign (0):     16334 patches
+  High-grade (1): 35476 patches
+
+Patch count by class for Validation:
+  Benign (0):     4875 patches
+  High-grade (1): 9226 patches
+
+Patch count by class for Test:
+  Benign (0):     4571 patches
+  High-grade (1): 9559 patches
+
+Data Integrity Check for Train:
+Stain coverage:
+  h&e: 57/57 (100.0%)
+  melan: 55/57 (96.5%)
+  sox10: 55/57 (96.5%)
+No issues found
+
+Data Integrity Check for Validation:
+Stain coverage:
+  h&e: 18/18 (100.0%)
+  melan: 18/18 (100.0%)
+  sox10: 18/18 (100.0%)
+No issues found
+
+Data Integrity Check for Test:
+Stain coverage:
+  h&e: 18/18 (100.0%)
+  melan: 18/18 (100.0%)
+  sox10: 18/18 (100.0%)
+No issues found
+Using existing splits from: /home/akb7007/stat390/Code8_VarSeeds_9Mar_Aidan/seed_342/no_train_val_leakage_splits/data_splits_new_01.npz
+
+============================================================
+CREATING DATA LOADERS (POOLED FEATURES)
+============================================================
+Created data loaders - Train: 57, Val: 18, Test: 18
+
+============================================================
+CREATING MODEL
+============================================================
+
+Model Summary:
+==================================================
+Total parameters: 2,493,061
+Trainable parameters: 2,493,061
+Model size: 9.51 MB
+==================================================
+
+============================================================
+TRAINING MODEL
+============================================================
+Starting training from epoch 1 to 30
+Device: cpu
+Model parameters: 2,493,061
+LR scheduler: ReduceLROnPlateau
+Patch entropy regularization enabled (lambda=0.001, mode=max, normalize=True) -> maximize entropy (smoother attention)
+Early stopping enabled (patience=8, min_delta=0.001, min_epochs=10)
+
+Epoch 1/30 (LR: 2.08e-04)
+Train Loss: 0.6875 | Train CE: 0.6885 | Train Patch Entropy: 0.9961 | Val Loss: 0.4166 | Val Acc: 0.8333
+Epoch Time: 52.38s
+New best validation loss: 0.4166
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_180637_HierarchicalAttnMIL_epoch1.pth
+Best checkpoint updated: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/best.pth
+
+Epoch 2/30 (LR: 2.08e-04)
+Train Loss: 0.4142 | Train CE: 0.4152 | Train Patch Entropy: 0.9836 | Val Loss: 0.3354 | Val Acc: 0.7778
+Epoch Time: 49.15s
+New best validation loss: 0.3354
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_180726_HierarchicalAttnMIL_epoch2.pth
+Best checkpoint updated: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/best.pth
+
+Epoch 3/30 (LR: 2.08e-04)
+Train Loss: 0.4349 | Train CE: 0.4359 | Train Patch Entropy: 0.9670 | Val Loss: 0.3026 | Val Acc: 0.8889
+Epoch Time: 45.06s
+New best validation loss: 0.3026
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_180811_HierarchicalAttnMIL_epoch3.pth
+Best checkpoint updated: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/best.pth
+
+Epoch 4/30 (LR: 2.08e-04)
+Train Loss: 0.1581 | Train CE: 0.1591 | Train Patch Entropy: 0.9676 | Val Loss: 0.1729 | Val Acc: 0.9444
+Epoch Time: 45.92s
+New best validation loss: 0.1729
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_180857_HierarchicalAttnMIL_epoch4.pth
+Best checkpoint updated: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/best.pth
+
+Epoch 5/30 (LR: 2.08e-04)
+Train Loss: 0.0690 | Train CE: 0.0699 | Train Patch Entropy: 0.9710 | Val Loss: 0.6815 | Val Acc: 0.7778
+Epoch Time: 48.22s
+No improvement for 1 epoch(s)
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_180946_HierarchicalAttnMIL_epoch5.pth
+
+Epoch 6/30 (LR: 2.08e-04)
+Train Loss: 0.0691 | Train CE: 0.0701 | Train Patch Entropy: 0.9523 | Val Loss: 0.1818 | Val Acc: 0.9444
+Epoch Time: 48.86s
+No improvement for 2 epoch(s)
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_181034_HierarchicalAttnMIL_epoch6.pth
+
+Epoch 7/30 (LR: 2.08e-04)
+Train Loss: 0.0619 | Train CE: 0.0629 | Train Patch Entropy: 0.9309 | Val Loss: 1.4416 | Val Acc: 0.6111
+Epoch Time: 46.37s
+No improvement for 3 epoch(s)
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_181121_HierarchicalAttnMIL_epoch7.pth
+
+Epoch 8/30 (LR: 2.08e-04)
+Train Loss: 0.0647 | Train CE: 0.0656 | Train Patch Entropy: 0.9171 | Val Loss: 0.3443 | Val Acc: 0.9444
+Epoch Time: 47.81s
+No improvement for 4 epoch(s)
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_181209_HierarchicalAttnMIL_epoch8.pth
+
+Epoch 9/30 (LR: 2.08e-04)
+Train Loss: 0.0467 | Train CE: 0.0477 | Train Patch Entropy: 0.9488 | Val Loss: 0.5618 | Val Acc: 0.8333
+Epoch Time: 48.24s
+No improvement for 5 epoch(s)
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_181257_HierarchicalAttnMIL_epoch9.pth
+
+Epoch 10/30 (LR: 4.45e-05)
+Train Loss: 0.0122 | Train CE: 0.0132 | Train Patch Entropy: 0.9493 | Val Loss: 0.1479 | Val Acc: 0.9444
+Epoch Time: 46.05s
+New best validation loss: 0.1479
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_181343_HierarchicalAttnMIL_epoch10.pth
+Best checkpoint updated: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/best.pth
+
+Epoch 11/30 (LR: 4.45e-05)
+Train Loss: 0.0021 | Train CE: 0.0031 | Train Patch Entropy: 0.9543 | Val Loss: 0.1375 | Val Acc: 1.0000
+Epoch Time: 47.36s
+New best validation loss: 0.1375
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_181430_HierarchicalAttnMIL_epoch11.pth
+Best checkpoint updated: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/best.pth
+
+Epoch 12/30 (LR: 4.45e-05)
+Train Loss: 0.0019 | Train CE: 0.0028 | Train Patch Entropy: 0.9536 | Val Loss: 0.1343 | Val Acc: 1.0000
+Epoch Time: 46.59s
+New best validation loss: 0.1343
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_181517_HierarchicalAttnMIL_epoch12.pth
+Best checkpoint updated: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/best.pth
+
+Epoch 13/30 (LR: 4.45e-05)
+Train Loss: 0.0010 | Train CE: 0.0019 | Train Patch Entropy: 0.9536 | Val Loss: 0.1347 | Val Acc: 1.0000
+Epoch Time: 45.68s
+No improvement for 1 epoch(s)
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_181603_HierarchicalAttnMIL_epoch13.pth
+
+Epoch 14/30 (LR: 4.45e-05)
+Train Loss: 0.0008 | Train CE: 0.0018 | Train Patch Entropy: 0.9534 | Val Loss: 0.1347 | Val Acc: 1.0000
+Epoch Time: 47.33s
+No improvement for 2 epoch(s)
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_181650_HierarchicalAttnMIL_epoch14.pth
+
+Epoch 15/30 (LR: 4.45e-05)
+Train Loss: 0.0001 | Train CE: 0.0010 | Train Patch Entropy: 0.9532 | Val Loss: 0.1343 | Val Acc: 1.0000
+Epoch Time: 48.43s
+No improvement for 3 epoch(s)
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_181739_HierarchicalAttnMIL_epoch15.pth
+
+Epoch 16/30 (LR: 4.45e-05)
+Train Loss: 0.0023 | Train CE: 0.0033 | Train Patch Entropy: 0.9535 | Val Loss: 0.1323 | Val Acc: 1.0000
+Epoch Time: 47.08s
+New best validation loss: 0.1323
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_181826_HierarchicalAttnMIL_epoch16.pth
+Best checkpoint updated: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/best.pth
+
+Epoch 17/30 (LR: 4.45e-05)
+Train Loss: -0.0002 | Train CE: 0.0008 | Train Patch Entropy: 0.9526 | Val Loss: 0.1384 | Val Acc: 0.9444
+Epoch Time: 48.41s
+No improvement for 1 epoch(s)
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_181914_HierarchicalAttnMIL_epoch17.pth
+
+Epoch 18/30 (LR: 4.45e-05)
+Train Loss: 0.0008 | Train CE: 0.0017 | Train Patch Entropy: 0.9528 | Val Loss: 0.1303 | Val Acc: 1.0000
+Epoch Time: 48.19s
+New best validation loss: 0.1303
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_182003_HierarchicalAttnMIL_epoch18.pth
+Best checkpoint updated: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/best.pth
+
+Epoch 19/30 (LR: 4.45e-05)
+Train Loss: 0.0001 | Train CE: 0.0011 | Train Patch Entropy: 0.9525 | Val Loss: 0.1338 | Val Acc: 0.9444
+Epoch Time: 48.56s
+No improvement for 1 epoch(s)
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_182051_HierarchicalAttnMIL_epoch19.pth
+
+Epoch 20/30 (LR: 4.45e-05)
+Train Loss: 0.0001 | Train CE: 0.0011 | Train Patch Entropy: 0.9517 | Val Loss: 0.1337 | Val Acc: 0.9444
+Epoch Time: 45.74s
+No improvement for 2 epoch(s)
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_182137_HierarchicalAttnMIL_epoch20.pth
+
+Epoch 21/30 (LR: 4.45e-05)
+Train Loss: 0.0002 | Train CE: 0.0011 | Train Patch Entropy: 0.9519 | Val Loss: 0.1289 | Val Acc: 1.0000
+Epoch Time: 45.93s
+New best validation loss: 0.1289
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_182223_HierarchicalAttnMIL_epoch21.pth
+Best checkpoint updated: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/best.pth
+
+Epoch 22/30 (LR: 4.45e-05)
+Train Loss: 0.0000 | Train CE: 0.0010 | Train Patch Entropy: 0.9512 | Val Loss: 0.1296 | Val Acc: 1.0000
+Epoch Time: 46.43s
+No improvement for 1 epoch(s)
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_182310_HierarchicalAttnMIL_epoch22.pth
+
+Epoch 23/30 (LR: 4.45e-05)
+Train Loss: 0.0005 | Train CE: 0.0014 | Train Patch Entropy: 0.9498 | Val Loss: 0.1216 | Val Acc: 1.0000
+Epoch Time: 46.85s
+New best validation loss: 0.1216
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_182356_HierarchicalAttnMIL_epoch23.pth
+Best checkpoint updated: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/best.pth
+
+Epoch 24/30 (LR: 4.45e-05)
+Train Loss: 0.0002 | Train CE: 0.0011 | Train Patch Entropy: 0.9495 | Val Loss: 0.1202 | Val Acc: 1.0000
+Epoch Time: 46.73s
+New best validation loss: 0.1202
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_182443_HierarchicalAttnMIL_epoch24.pth
+Best checkpoint updated: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/best.pth
+
+Epoch 25/30 (LR: 4.45e-05)
+Train Loss: -0.0001 | Train CE: 0.0009 | Train Patch Entropy: 0.9491 | Val Loss: 0.1228 | Val Acc: 1.0000
+Epoch Time: 46.39s
+No improvement for 1 epoch(s)
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_182530_HierarchicalAttnMIL_epoch25.pth
+
+Epoch 26/30 (LR: 4.45e-05)
+Train Loss: -0.0001 | Train CE: 0.0009 | Train Patch Entropy: 0.9487 | Val Loss: 0.1203 | Val Acc: 1.0000
+Epoch Time: 46.36s
+No improvement for 2 epoch(s)
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_182616_HierarchicalAttnMIL_epoch26.pth
+
+Epoch 27/30 (LR: 4.45e-05)
+Train Loss: 0.0003 | Train CE: 0.0013 | Train Patch Entropy: 0.9486 | Val Loss: 0.1136 | Val Acc: 1.0000
+Epoch Time: 54.61s
+New best validation loss: 0.1136
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_182711_HierarchicalAttnMIL_epoch27.pth
+Best checkpoint updated: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/best.pth
+
+Epoch 28/30 (LR: 4.45e-05)
+Train Loss: -0.0003 | Train CE: 0.0006 | Train Patch Entropy: 0.9486 | Val Loss: 0.1213 | Val Acc: 1.0000
+Epoch Time: 46.87s
+No improvement for 1 epoch(s)
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_182758_HierarchicalAttnMIL_epoch28.pth
+
+Epoch 29/30 (LR: 4.45e-05)
+Train Loss: -0.0001 | Train CE: 0.0009 | Train Patch Entropy: 0.9484 | Val Loss: 0.1226 | Val Acc: 1.0000
+Epoch Time: 46.62s
+No improvement for 2 epoch(s)
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_182844_HierarchicalAttnMIL_epoch29.pth
+
+Epoch 30/30 (LR: 4.45e-05)
+Train Loss: -0.0003 | Train CE: 0.0007 | Train Patch Entropy: 0.9480 | Val Loss: 0.1267 | Val Acc: 0.9444
+Epoch Time: 46.60s
+No improvement for 3 epoch(s)
+Checkpoint saved: /projects/e32998/MIL_training/final_runs/run_20260310_180533/checkpoints/20260310_182931_HierarchicalAttnMIL_epoch30.pth
+
+Training completed!
+
+============================================================
+EVALUATING MODEL
+============================================================
+
+Test Results:
+  Test Loss: 0.1986
+  Test Acc:  0.9444
+  Samples:   18
+Predictions saved to: /projects/e32998/MIL_training/final_runs/run_20260310_180533/predictions.csv
+Confusion matrix saved to: /projects/e32998/MIL_training/final_runs/run_20260310_180533/confusion_matrix.png
+
+============================================================
+ATTENTION ANALYSIS
+============================================================
+Attention summary saved to: /projects/e32998/MIL_training/final_runs/run_20260310_180533/attention_analysis/attention_summary.txt
+Per-case effective patch attention distributions saved.
+Per-case & per-stain slice attention rank plots saved to: /projects/e32998/MIL_training/final_runs/run_20260310_180533/attention_analysis/slice_attention
+Per-case top 5.0% effective patches CSV saved to: /projects/e32998/MIL_training/final_runs/run_20260310_180533/attention_analysis/top_effective_patches_per_case_5.0pct.csv
+Per-case top 5.0% summary saved to: /projects/e32998/MIL_training/final_runs/run_20260310_180533/attention_analysis/top_effective_patches_per_case_summary_5.0pct.txt
+Attention analysis saved to: /projects/e32998/MIL_training/final_runs/run_20260310_180533/attention_analysis
+
+Results saved to: /projects/e32998/MIL_training/final_runs/run_20260310_180533
+
+Total execution time: 1685.96s (0.47 hours)
+Training completed successfully!
